@@ -1,0 +1,9 @@
+:root {
+    --color-red: red;
+    --scrollTop: 0;
+
+    --parallax-back: url('../img/3.png');
+    --parallax-middle: url('../img/2.png');
+    --parallax-front: url('../img/1.png');
+    
+}

@@ -1,0 +1,44 @@
+.parallax {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+
+.parallax-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    will-change: transform;
+}
+
+.parallax-back {
+    background-image: var(--parallax-back);
+    transform: translateY(calc(var(--scrollTop) /1.5));
+}
+
+.parallax-middle {
+    background-image: var(--parallax-middle);
+    transform: translateY(calc(var(--scrollTop)/3));
+}
+
+.parallax-front {
+    background-image: var(--parallax-front);
+}
+
+.separator{
+    background-image: url(../img/4.png);
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    will-change: transform;
+    position: absolute;
+    z-index: 10;
+    bottom: -550px;
+}
